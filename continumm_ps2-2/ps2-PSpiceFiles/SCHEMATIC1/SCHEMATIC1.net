@@ -1,0 +1,11 @@
+* source PS2
+R_R1         N00104 N00076  1.6k TC=0,0 
+C_C1         N00076 0  100nf  TC=0,0 
+V_V1         N00104 0 DC 0Vdc AC 1Vac 
+R_R2         0 N00384  10000 TC=0,0 
+C_C2         N00377 N00384  500nf  TC=0,0 
+V_V2         N00377 0 DC 0Vdc AC 1Vac 
+C_C3         N00384 N00556  500nf  TC=0,0 
+R_R3         0 N00556  10000 TC=0,0 
+R_R4         0 N00722  10000 TC=0,0 
+C_C4         N00556 N00722  500nf  TC=0,0 

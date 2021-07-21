@@ -1,0 +1,267 @@
+
+**** 04/11/21 13:50:20 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps1\circuit-PSpiceFiles\SCHEMATIC1\trial.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trial.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\prana\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 0.001 
+.OPTIONS ADVCONV
+.OPTIONS DMFACTOR= 0.001
+.OPTIONS METHOD= Default
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CIRCUIT
+E_U1         N15160 0 VALUE {LIMIT(V(0,N15144)*1E6,-15V,+15V)}
+C_C1         N15144 N15160  1n IC=0 TC=0,0 
+R_R1         N15170 N15144  1k TC=0,0 
+V_V1         N15170 0  AC 1
++SIN 0 1 10 0 0 0
+
+**** RESUMING trial.cir ****
+.END
+
+**** 04/11/21 13:50:20 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps1\circuit-PSpiceFiles\SCHEMATIC1\trial.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15144)    0.0000 (N15160)    0.0000 (N15170)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  .15 .
+         Time step =  444.1E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N15144)                 =   -36.79uV  \    15.06uV
+
+  These supply currents failed to converge:
+
+    I(E_U1)                   =    36.79nA  \   -98.19nA
+    I(V_V1)                   =    46.34nA  \    98.19nA
+
+  These devices failed to converge:
+    E_U1      
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15144)-36.79E-06 (N15160)  -15.0000 (N15170)-83.13E-06 
+
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1
+**** Param: TMAX = 0.001
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 1
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 3
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+Convergence problem in transient analysis at Time =  .15 
+         Time step =  444.1E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N15144)                 =   -36.79uV  \    15.06uV
+
+  These supply currents failed to converge:
+
+    I(E_U1)                   =    36.79nA  \   -98.19nA
+    I(V_V1)                   =    46.34nA  \    98.19nA
+
+  These devices failed to converge:
+    E_U1      
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15144)-36.79E-06 (N15160)  -15.0000 (N15170)-83.13E-06 
+
+Resuming Simulation with the following settings
+ITL4 = 354
+ABSTOL = 1.41e-009
+VNTOL = 4.47e-005
+
+Convergence problem in transient analysis at Time =  .15 
+         Time step =  444.1E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N15144)                 =   -36.79uV  \    15.06uV
+
+  These supply currents failed to converge:
+
+    I(E_U1)                   =    36.79nA  \   -98.19nA
+    I(V_V1)                   =    46.34nA  \    98.19nA
+
+  These devices failed to converge:
+    E_U1      
+Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15144)-36.79E-06 (N15160)  -15.0000 (N15170)-83.13E-06 
+
+Resuming Simulation with the following settings
+ITL4 = 1000
+ABSTOL = 2e-006
+VNTOL = 0.001
+
+Convergence problem in transient analysis at Time =  .15 
+         Time step =  444.1E-21, minimum allowable step size =  1.000E-18
+
+  These devices failed to converge:
+    E_U1      
+Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15144)-36.79E-06 (N15160)  -15.0000 (N15170)-83.13E-06 
+
+Resuming Simulation with the following settings
+ABSTOL = 0.001
+
+Convergence problem in transient analysis at Time =  .15 
+         Time step =  444.1E-21, minimum allowable step size =  1.000E-18
+
+  These devices failed to converge:
+    E_U1      
+Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15144)-36.79E-06 (N15160)  -15.0000 (N15170)-83.13E-06 
+
+Resuming could not converge the circuit, restarting it now
+
+  These voltages failed to converge:
+
+    V(N15160)                 =     15.00V  \    -15.00V
+    V(N15144)                 =     30.00V  \   -36.79uV
+
+  These supply currents failed to converge:
+
+    I(E_U1)                   =   -30.00mA  \    36.79nA
+    I(V_V1)                   =    30.00mA  \    46.34nA
+
+  These devices failed to converge:
+    E_U1      
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  .15 .
+         Time step =  444.1E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N15160)                 =    -15.00V  \     15.00V
+    V(N15144)                 =   -36.79uV  \     30.00V
+
+  These supply currents failed to converge:
+
+    I(E_U1)                   =    36.79nA  \   -30.00mA
+    I(V_V1)                   =    46.34nA  \    30.00mA
+
+  These devices failed to converge:
+    E_U1      
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15144)-36.79E-06 (N15160)  -15.0000 (N15170)-83.13E-06 
+
+
+**** Interrupt ****

@@ -1,0 +1,340 @@
+
+**** 04/16/21 15:27:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\Robotics\Udyam 21\Continuum\ps2\differen-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../differen-pspicefiles/differen.lib" 
+* From [PSPICE NETLIST] section of C:\Users\HP\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DIFFEREN
+E_U8         N28180 0 VALUE {LIMIT(V(0,N28083)*1E6,-15V,+15V)}
+R_R1         N28083 N28180  500 TC=0,0 
+C_C1         N28087 N28083  0.000001  TC=0,0 
+V_V1         N28087 0  AC 0
++SIN 0 5 100 0 0 0
+E_U9         N29049 0 VALUE {LIMIT(V(0,N28987)*1E6,-15V,+15V)}
+V_V2         N28991 0  AC 0
++SIN 0 5 100 0 0 0
+R_R2         N28991 N28987  50 TC=0,0 
+C_C2         N28987 N29049  0.0001  TC=0,0 
+R_R3         N30453 N30563  755000 TC=0,0 
+D_D2         N35386 N30453 Dbreak 
+X_U2         0 N30453 N30447 N304273 N30457 uA741
+V_V9         0 N304273 500
+V_V10         N30447 0 500
+D_D3         N33800 N33750 Dbreak 
+V_V12         0 N337743 500
+V_V13         N33794 0 500
+R_R4         N33816 N33800  1000000 TC=0,0 
+X_U10         0 N33800 N33794 N337743 N33750 uA741
+E_U11         N35386 0 VALUE {LIMIT(V(0,N35391)*1E6,-15V,+15V)}
+R_R5         N33750 N35391  1000000 TC=0,0 
+R_R6         N33750 N35391  1000000 TC=0,0 
+R_R7         N35391 N35386  1000000 TC=0,0 
+V_V15         N30457 N30563 1
+D_D4         0 N38600 Dbreak 
+D_D5         N38600 N38638 Dbreak 
+D_D6         0 N38655 Dbreak 
+D_D7         N38655 N38638 Dbreak 
+V_V17         N38600 N38655  AC 0
++SIN 0 5 100 0 0 0
+R_R9         0 N38638  1000 TC=0,0 
+E_U12         N44481 0 VALUE {LIMIT(V(N38638,N44493)*1E6,-15V,+15V)}
+R_R10         N44493 N44481  10000 TC=0,0 
+R_R11         0 N44493  10 TC=0,0 
+V_V18         N33816 0  AC 0
++SIN 0 5 100 0 0 0
+
+**** RESUMING bias.cir ****
+.END
+
+**** 04/16/21 15:27:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\Robotics\Udyam 21\Continuum\ps2\differen-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          X_U2.dx         X_U10.dx        
+          IS    1.000000E-06  800.000000E-18  800.000000E-18 
+           N   55                                            
+          RS     .1             1               1            
+         CJO  100.000000E-15                                 
+
+
+**** 04/16/21 15:27:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\Robotics\Udyam 21\Continuum\ps2\differen-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.qx         X_U10.qx        
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/16/21 15:27:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\Robotics\Udyam 21\Continuum\ps2\differen-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N28083)    0.0000 (N28087)    0.0000 (N28180)    0.0000 (N28987)    0.0000     
+
+(N28991)    0.0000 (N29049)    0.0000 (N30447)  500.0000 (N30453) 13.35E-06     
+
+(N30457)    1.1749 (N30563)     .1749 (N33750)     .1175 (N33794)  500.0000     
+
+(N33800) 18.66E-06 (N33816)    0.0000 (N35386)    -.2351 (N35391) 235.1E-09     
+
+(N38600)    0.0000 (N38638)    0.0000 (N38655)    0.0000 (N44481)    0.0000     
+
+(N44493)    0.0000 (X_U2.6)-111.0E-06 (X_U2.7)    1.1749 (X_U2.8)    1.1749     
+
+(X_U2.9)    0.0000 (N304273) -500.0000                   (N337743) -500.0000    
+
+(X_U10.6)-11.11E-06                   (X_U10.7)     .1176                       
+
+(X_U10.8)     .1176                   (X_U10.9)    0.0000                       
+
+(X_U2.10)    -.6077                   (X_U2.11)  499.9600                       
+
+(X_U2.12)  499.9600                   (X_U2.13)    -.5938                       
+
+(X_U2.14)    -.5938                   (X_U2.53)  499.0000                       
+
+(X_U2.54) -499.0000                   (X_U2.90) 231.6E-06                       
+
+(X_U2.91)   40.0000                   (X_U2.92)  -40.0000                       
+
+(X_U2.99)    0.0000                   (X_U10.10)    -.6077                      
+
+(X_U10.11)  499.9600                  (X_U10.12)  499.9600                      
+
+(X_U10.13)    -.5938                  (X_U10.14)    -.5938                      
+
+(X_U10.53)  499.0000                  (X_U10.54) -499.0000                      
+
+(X_U10.90) 314.4E-06                  (X_U10.91)   40.0000                      
+
+(X_U10.92)  -40.0000                  (X_U10.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+    V_V9        -5.508E-02
+    V_V10       -5.508E-02
+    V_V12       -5.508E-02
+    V_V13       -5.508E-02
+    V_V15        2.316E-07
+    V_V17        0.000E+00
+    V_V18        1.866E-11
+    X_U2.vb     -1.110E-09
+    X_U2.vc      4.978E-10
+    X_U2.ve      5.002E-10
+    X_U2.vlim    2.316E-07
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+    X_U10.vb    -1.111E-10
+    X_U10.vc     4.989E-10
+    X_U10.ve     4.991E-10
+    X_U10.vlim   3.144E-07
+    X_U10.vlp   -4.000E-11
+    X_U10.vln   -4.000E-11
+
+    TOTAL POWER DISSIPATION   1.10E+02  WATTS
+
+
+**** 04/16/21 15:27:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\Robotics\Udyam 21\Continuum\ps2\differen-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U2.ga     X_U2.gcm    X_U10.ga    X_U10.gcm 
+I-SOURCE    -2.513E-09  -3.622E-09  -3.511E-09  -3.622E-09
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         E_U8        E_U9        E_U11       E_U12       X_U2.egnd 
+V-SOURCE     0.000E+00   0.000E+00  -2.351E-01   0.000E+00   0.000E+00
+I-SOURCE     0.000E+00   0.000E+00   3.874E-07   0.000E+00  -2.777E-07
+
+NAME         X_U10.egnd
+V-SOURCE     0.000E+00
+I-SOURCE    -3.604E-07
+
+
+**** CURRENT-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U2.fb     X_U10.fb  
+I-SOURCE    -1.175E-02  -1.176E-03
+
+
+**** CURRENT-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U2.hlim   X_U10.hlim
+V-SOURCE     2.316E-04   3.144E-04
+I-SOURCE    -4.632E-16  -6.288E-16
+
+
+**** DIODES
+
+
+NAME         D_D2        D_D3        D_D4        D_D5        D_D6      
+MODEL        Dbreak      Dbreak      Dbreak      Dbreak      Dbreak    
+ID          -1.52E-07   -7.93E-08    0.00E+00    0.00E+00    0.00E+00 
+VD          -2.35E-01   -1.18E-01    0.00E+00    0.00E+00    0.00E+00 
+REQ          1.68E+06    1.55E+06    1.42E+06    1.42E+06    1.42E+06 
+CAP          9.00E-14    9.46E-14    1.00E-13    1.00E-13    1.00E-13 
+
+NAME         D_D7        X_U2.dc     X_U2.de     X_U2.dlp    X_U2.dln  
+MODEL        Dbreak      X_U2.dx     X_U2.dx     X_U2.dx     X_U2.dx   
+ID           0.00E+00   -4.98E-10   -5.00E-10   -4.00E-11   -4.00E-11 
+VD           0.00E+00   -4.98E+02   -5.00E+02   -4.00E+01   -4.00E+01 
+REQ          1.42E+06    1.00E+12    1.00E+12    1.00E+12    1.00E+12 
+CAP          1.00E-13    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+NAME         X_U2.dp     X_U10.dc    X_U10.de    X_U10.dlp   X_U10.dln 
+MODEL        X_U2.dx     X_U10.dx    X_U10.dx    X_U10.dx    X_U10.dx  
+ID          -1.00E-09   -4.99E-10   -4.99E-10   -4.00E-11   -4.00E-11 
+VD          -1.00E+03   -4.99E+02   -4.99E+02   -4.00E+01   -4.00E+01 
+REQ          1.00E+12    1.00E+12    1.00E+12    1.00E+12    1.00E+12 
+CAP          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+NAME         X_U10.dp  
+MODEL        X_U10.dx  
+ID          -1.00E-09 
+VD          -1.00E+03 
+REQ          1.00E+12 
+CAP          0.00E+00 
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         X_U2.q1     X_U2.q2     X_U10.q1    X_U10.q2  
+MODEL        X_U2.qx     X_U2.qx     X_U10.qx    X_U10.qx  
+IB           7.93E-08    7.92E-08    7.93E-08    7.92E-08 
+IC           7.48E-06    7.48E-06    7.48E-06    7.48E-06 
+VBE          5.94E-01    5.94E-01    5.94E-01    5.94E-01 
+VBC         -5.00E+02   -5.00E+02   -5.00E+02   -5.00E+02 
+VCE          5.01E+02    5.01E+02    5.01E+02    5.01E+02 
+BETADC       9.44E+01    9.44E+01    9.44E+01    9.44E+01 
+GM           2.89E-04    2.89E-04    2.89E-04    2.89E-04 
+RPI          3.24E+05    3.24E+05    3.24E+05    3.24E+05 
+RX           0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+RO           1.00E+12    1.00E+12    1.00E+12    1.00E+12 
+CBE          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBC          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CJS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+BETAAC       9.38E+01    9.38E+01    9.38E+01    9.38E+01 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       4.60E+15    4.60E+15    4.60E+15    4.60E+15 
+
+
+
+          JOB CONCLUDED
+
+**** 04/16/21 15:27:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\Robotics\Udyam 21\Continuum\ps2\differen-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

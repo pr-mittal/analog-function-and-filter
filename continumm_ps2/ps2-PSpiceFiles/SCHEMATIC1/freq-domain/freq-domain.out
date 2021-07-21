@@ -1,0 +1,234 @@
+
+**** 04/16/21 14:17:42 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "freq-domain.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\prana\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.5 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PS2
+X_U4         0 N21540 N21681 N21702 N21518 uA741
+R_R2         N21548 0  15.9504 TC=0,0 
+R_R1         N25491 N21548  7959.25 TC=0,0 
+R_R3         N21540 N21518  159185 TC=0,0 
+C_C10         N21548 N21540  1uF  TC=0,0 
+C_C11         N21548 N21518  1uF  TC=0,0 
+V_V10         0 N21702 50Vdc
+V_V11         N21681 0 50Vdc
+V_V14         N23560 0 50Vdc
+V_V13         0 N23570 50Vdc
+R_R4         N23478 0  15.1909 TC=0,0 
+X_U5         0 N23472 N23560 N23570 N23434 uA741
+C_C13         N23478 N23434  1uF  TC=0,0 
+R_R5         N25491 N23478  7580.24 TC=0,0 
+R_R6         N23472 N23434  151605 TC=0,0 
+C_C12         N23478 N23472  1uF  TC=0,0 
+C_C14         N24280 N24274  1uF  TC=0,0 
+R_R9         N24274 N24220  144714 TC=0,0 
+V_V16         0 N24372 50Vdc
+V_V17         N24362 0 50Vdc
+R_R8         N25491 N24280  7235.68 TC=0,0 
+C_C15         N24280 N24220  1uF  TC=0,0 
+X_U6         0 N24274 N24362 N24372 N24220 uA741
+R_R7         N24280 0  14.5004 TC=0,0 
+V_V18         N25491 0  AC 1
++SIN 0 1 105 0 0 0
+
+**** RESUMING freq-domain.cir ****
+.END
+
+**** 04/16/21 14:17:42 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.s
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.dx         X_U5.dx         X_U6.dx         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1               1            
+
+
+**** 04/16/21 14:17:42 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.s
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.qx         X_U5.qx         X_U6.qx         
+               NPN             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75         
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 04/16/21 14:17:42 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N21518)     .0127 (N21540) 19.19E-06 (N21548)    0.0000 (N21681)   50.0000     
+
+(N21702)  -50.0000 (N23434)     .0121 (N23472) 19.19E-06 (N23478)    0.0000     
+
+(N23560)   50.0000 (N23570)  -50.0000 (N24220)     .0116 (N24274) 19.19E-06     
+
+(N24280)    0.0000 (N24362)   50.0000 (N24372)  -50.0000 (N25491)    0.0000     
+
+(X_U4.6)-1.202E-06 (X_U4.7)     .0127 (X_U4.8)     .0127 (X_U4.9)    0.0000     
+
+(X_U5.6)-1.145E-06 (X_U5.7)     .0121 (X_U5.8)     .0121 (X_U5.9)    0.0000     
+
+(X_U6.6)-1.093E-06 (X_U6.7)     .0116 (X_U6.8)     .0116 (X_U6.9)    0.0000     
+
+(X_U4.10)    -.6077                   (X_U4.11)   49.9600                       
+
+(X_U4.12)   49.9600                   (X_U4.13)    -.5938                       
+
+(X_U4.14)    -.5938                   (X_U4.53)   49.0000                       
+
+(X_U4.54)  -49.0000                   (X_U4.90) 79.73E-06                       
+
+(X_U4.91)   40.0000                   (X_U4.92)  -40.0000                       
+
+(X_U4.99)    0.0000                   (X_U5.10)    -.6077                       
+
+(X_U5.11)   49.9600                   (X_U5.12)   49.9600                       
+
+(X_U5.13)    -.5938                   (X_U5.14)    -.5938                       
+
+(X_U5.53)   49.0000                   (X_U5.54)  -49.0000                       
+
+(X_U5.90) 79.73E-06                   (X_U5.91)   40.0000                       
+
+(X_U5.92)  -40.0000                   (X_U5.99)    0.0000                       
+
+(X_U6.10)    -.6077                   (X_U6.11)   49.9600                       
+
+(X_U6.12)   49.9600                   (X_U6.13)    -.5938                       
+
+(X_U6.14)    -.5938                   (X_U6.53)   49.0000                       
+
+(X_U6.54)  -49.0000                   (X_U6.90) 79.73E-06                       
+
+(X_U6.91)   40.0000                   (X_U6.92)  -40.0000                       
+
+(X_U6.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V10       -5.522E-03
+    V_V11       -5.522E-03
+    V_V14       -5.522E-03
+    V_V13       -5.522E-03
+    V_V16       -5.522E-03
+    V_V17       -5.522E-03
+    V_V18        0.000E+00
+    X_U4.vb     -1.202E-11
+    X_U4.vc      4.899E-11
+    X_U4.ve      4.902E-11
+    X_U4.vlim    7.973E-08
+    X_U4.vlp    -4.000E-11
+    X_U4.vln    -4.000E-11
+    X_U5.vb     -1.145E-11
+    X_U5.vc      4.899E-11
+    X_U5.ve      4.902E-11
+    X_U5.vlim    7.973E-08
+    X_U5.vlp    -4.000E-11
+    X_U5.vln    -4.000E-11
+    X_U6.vb     -1.093E-11
+    X_U6.vc      4.899E-11
+    X_U6.ve      4.902E-11
+    X_U6.vlim    7.973E-08
+    X_U6.vlp    -4.000E-11
+    X_U6.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   1.66E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/16/21 14:17:42 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

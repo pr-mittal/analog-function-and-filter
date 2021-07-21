@@ -1,0 +1,95 @@
+
+**** 04/12/21 15:34:22 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ D:\Robotics\Udyam 21\Continuum\ps2\ps2-PSpiceFiles\SCHEMATIC1\test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\HP\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 100000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PS2
+R_R1         N00104 N00076  1.6k TC=0,0 
+C_C1         N00076 0  100nf  TC=0,0 
+V_V1         N00104 0 DC 0Vdc AC 1Vac 
+R_R2         0 N00384  10000 TC=0,0 
+C_C2         N00377 N00384  500nf  TC=0,0 
+V_V2         N00377 0 DC 0Vdc AC 1Vac 
+C_C3         N00384 N00556  500nf  TC=0,0 
+R_R3         0 N00556  10000 TC=0,0 
+R_R4         0 N00722  10000 TC=0,0 
+C_C4         N00556 N00722  500nf  TC=0,0 
+
+**** RESUMING test.cir ****
+.END
+
+**** 04/12/21 15:34:22 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ D:\Robotics\Udyam 21\Continuum\ps2\ps2-PSpiceFiles\SCHEMATIC1\test.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00076)    0.0000 (N00104)    0.0000 (N00377)    0.0000 (N00384)    0.0000     
+
+(N00556)    0.0000 (N00722)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/12/21 15:34:22 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ D:\Robotics\Udyam 21\Continuum\ps2\ps2-PSpiceFiles\SCHEMATIC1\test.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

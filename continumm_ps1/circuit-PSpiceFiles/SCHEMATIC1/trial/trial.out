@@ -1,0 +1,188 @@
+
+**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trial.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\prana\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2 0 0.1 
+.OPTIONS ADVCONV
+.OPTIONS METHOD= Default
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CIRCUIT
+X_U2         0 N15640 N15931 N15901 N15628 uA741
+C_C2         N16107 N15640  1uF IC=1 TC=0,0 
+R_R2         N15640 N15628  10k TC=0,0 
+V_V2         0 N15901 100
+V_V3         N15931 0 100
+X_U3         0 N16122 N15931 N15901 N16107 uA741
+R_R3         N16122 N16107  100k TC=0,0 
+R_R4         N15628 N16122  693.14718 TC=0,0 
+
+**** RESUMING trial.cir ****
+.END
+
+**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.dx         X_U3.dx         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1            
+
+
+**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.qx         X_U3.qx         
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N15628)    -.0069 (N15640) 19.29E-06 (N15901) -100.0000 (N15931)  100.0000     
+
+(N16107)    1.0000 (N16122) 14.22E-06 (X_U2.6) 799.1E-09 (X_U2.7)    -.0074     
+
+(X_U2.8)    -.0074 (X_U2.9)    0.0000 (X_U3.6)-94.60E-06 (X_U3.7)    1.0006     
+
+(X_U3.8)    1.0006 (X_U3.9)    0.0000 (X_U2.10)    -.6077                       
+
+(X_U2.11)   99.9600                   (X_U2.12)   99.9600                       
+
+(X_U2.13)    -.5938                   (X_U2.14)    -.5938                       
+
+(X_U2.53)   99.0000                   (X_U2.54)  -99.0000                       
+
+(X_U2.90)    -.0106                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                       
+
+(X_U3.10)    -.6077                   (X_U3.11)   99.9600                       
+
+(X_U3.12)   99.9600                   (X_U3.13)    -.5938                       
+
+(X_U3.14)    -.5938                   (X_U3.53)   99.0000                       
+
+(X_U3.54)  -99.0000                   (X_U3.90)     .0108                       
+
+(X_U3.91)   40.0000                   (X_U3.92)  -40.0000                       
+
+(X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.206E-02
+    V_V3        -2.206E-02
+    X_U2.vb      7.991E-12
+    X_U2.vc      9.901E-11
+    X_U2.ve      9.900E-11
+    X_U2.vlim   -1.061E-05
+    X_U2.vlp    -4.001E-11
+    X_U2.vln    -3.999E-11
+    X_U3.vb     -9.460E-10
+    X_U3.vc      9.800E-11
+    X_U3.ve      1.000E-10
+    X_U3.vlim    1.077E-05
+    X_U3.vlp    -3.999E-11
+    X_U3.vln    -4.001E-11
+
+    TOTAL POWER DISSIPATION   4.41E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

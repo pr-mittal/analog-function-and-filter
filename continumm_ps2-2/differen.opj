@@ -1,0 +1,117 @@
+(ExpressProject "differen"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "F:\Orcad\tools\capture\library\pspice\analog.olb"
+        (DisplayName "F:\Orcad\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "F:\Orcad\tools\capture\library\pspice\breakout.olb"
+        (DisplayName "F:\Orcad\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "F:\Orcad\tools\capture\library\pspice\source.olb"
+        (DisplayName "F:\Orcad\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "F:\Orcad\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName "F:\Orcad\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File "F:\Orcad\tools\capture\library\pspice\special.olb"
+        (DisplayName "F:\Orcad\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "differen.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\differen-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\differen-pspicefiles\differen.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\differen-pspicefiles\differen.lib")))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\differen-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\differen-pspicefiles\schematic1\diff.sim"
+        (DisplayName "SCHEMATIC1-diff")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\differen-pspicefiles\schematic1\diff.sim")))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "F:\ORCAD\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "F:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "F:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName "F:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "F:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName "F:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "LIBRARY\PSPICE")
+  (MPSSessionName "prana")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen.dsn")
+      (Path "Design Resources"
+         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 283"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1378 52 370")
+        (Scroll "232 550")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\PRANA\ONEDRIVE\DESKTOP\UDYAM\CONTINUUM\PS2-2\DIFFEREN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

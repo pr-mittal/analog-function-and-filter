@@ -1,0 +1,103 @@
+
+**** 04/15/21 18:33:00 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "freq-domain.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\prana\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 100 1000k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PS2
+X_U4         0 N21540 N21681 N21702 N21518 uA741
+R_R9         N21548 0  1k TC=0,0 
+R_R10         N21805 N21548  1k TC=0,0 
+R_R11         N21548 N21518  1k TC=0,0 
+C_C10         N21548 N21540  1n  TC=0,0 
+C_C11         N21548 N21518  1n  TC=0,0 
+V_V10         0 N21702 10Vdc
+V_V11         N21681 0 10Vdc
+V_V12         N21805 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING freq-domain.cir ****
+.END
+
+ERROR -- EVALUATION VERSION analog Node Limit (75 Nodes) Exceeded!
+
+
+
+
+ABORTING SIMULATION
+**** 04/15/21 18:33:00 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           7
+  External (NCNODS)                 =          22
+  Total (NUMNOD)                    =          22
+
+Total device count (NUMEL)          =          38
+  Capacitors (C)                    =           4
+  Diodes (D)                        =           5
+  VCVS (E)                          =           1
+  CCCS (F)                          =           1
+  VCCS (G)                          =           2
+  CCVS (H)                          =           1
+  Current Sources (I)               =           1
+  BJTs (Q)                          =           2
+  Resistors (R)                     =          12
+  Voltage Sources (V)               =           9
+
+Number of subcircuits (X)           =           1
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Readin                            =        0.00
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        0.00
+  Total job time                    =        0.00
+
