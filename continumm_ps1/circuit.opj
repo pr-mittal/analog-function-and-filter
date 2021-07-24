@@ -127,7 +127,15 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Outputs"))
+      (Path "Design Resources"
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit.dsn")
+      (Path "Design Resources"
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -137,10 +145,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1382 52 374")
-        (Scroll "-151 50")
-        (Zoom "116")
+        (Placement "44 0 1 -1 -1 -8 -31 104 1430 104 422")
+        (Scroll "-159 0")
+        (Zoom "99")
         (Occurrence "/"))
-      (Path "C:\USERS\PRANA\ONEDRIVE\DESKTOP\UDYAM\CONTINUUM\PS1\CIRCUIT.DSN")
+      (Path
+         "C:\USERS\PRANA\ONEDRIVE\DOCUMENTS\GITHUB\ANALOG-FUNCTION-AND-FILTER\CONTINUMM_PS1\CIRCUIT.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))

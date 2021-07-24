@@ -108,12 +108,15 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2.DSN")
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2\ps2.DSN")
       (Path "Design Resources"
-         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2.DSN"
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2\ps2.DSN"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2\ps2.DSN"
+         "SCHEMATIC1" "NBPF"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -123,10 +126,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 26 1356 26 348")
-        (Scroll "-82 0")
+        (Placement "44 0 1 -1 -1 -8 -31 0 1330 0 322")
+        (Scroll "-156 290")
         (Zoom "100")
         (Occurrence "/"))
-      (Path "C:\USERS\PRANA\ONEDRIVE\DESKTOP\UDYAM\CONTINUUM\PS2\PS2.DSN")
+      (Path
+         "C:\USERS\PRANA\ONEDRIVE\DOCUMENTS\GITHUB\ANALOG-FUNCTION-AND-FILTER\CONTINUMM_PS2\PS2.DSN")
       (Schematic "SCHEMATIC1")
       (Page "NBPF"))))
