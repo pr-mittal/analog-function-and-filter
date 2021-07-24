@@ -1,7 +1,7 @@
-
-**** 04/16/21 13:55:57 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen-pspicefiles\schematic1\diff.sim ] 
+**** 07/25/21 00:04:54 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen-pspice
 
 
  ****     CIRCUIT DESCRIPTION
@@ -32,10 +32,10 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source DIFFEREN
-E_U8         N28180 0 VALUE {LIMIT(V(0,N28083)*1E6,-15V,+15V)}
-R_R1         N28083 N28180  1600 TC=0,0 
-C_C1         N28087 N28083  0.000001  TC=0,0 
-V_V1         N28087 0  AC 0
+E_U8         N51459 0 VALUE {LIMIT(V(0,N28108)*1E6,-15V,+15V)}
+R_R1         N28108 N51459  1600 TC=0,0 
+C_C1         N55662 N28108  0.000001  TC=0,0 
+V_V1         N55662 0  AC 0
 +SIN 0 2.5 100 0 0 0
 E_U9         N29049 0 VALUE {LIMIT(V(0,N28987)*1E6,-15V,+15V)}
 V_V2         N28991 0  AC 0
@@ -66,7 +66,7 @@ V_V17         N48591 N48629  AC 0
 R_R12         N29049 N50646  1000 TC=0,0 
 R_R13         N30457 N50646  1000 TC=0,0 
 R_R14         N50646 N52110  1000 TC=0,0 
-R_R15         N28180 N50646  1000 TC=0,0 
+R_R15         N51459 N50646  1000 TC=0,0 
 X_U14         0 N50646 N52100 N520803 N52110 uA741
 V_V19         N52100 0 100
 V_V18         0 N520803 100
@@ -74,10 +74,18 @@ D_D8         N33750 N30453 Dbreak
 
 **** RESUMING diff.cir ****
 .END
-
-**** 04/16/21 13:55:57 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen-pspicefiles\schematic1\diff.sim ] 
+WARNING(ORPSIM-15223): Library file C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen-pspicefiles\differen.lib has changed since index file differen.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Fri Apr 16 11:57:00 2021 to Sat Jul 24 20:02:04 2021.
+
+INFO(ORPSIM-15422): Making new index file differen.ind for library file differen.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 07/25/21 00:04:54 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen-pspice
 
 
  ****     Diode MODEL PARAMETERS
@@ -95,9 +103,9 @@ D_D8         N33750 N30453 Dbreak
          CJO  100.000000E-15                                                 
 
 
-**** 04/16/21 13:55:57 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/25/21 00:04:54 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen-pspicefiles\schematic1\diff.sim ] 
+ ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen-pspice
 
 
  ****     BJT MODEL PARAMETERS
@@ -133,9 +141,9 @@ D_D8         N33750 N30453 Dbreak
            D     .87             .87             .87         
 
 
-**** 04/16/21 13:55:57 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/25/21 00:04:54 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen-pspicefiles\schematic1\diff.sim ] 
+ ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen-pspice
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -148,17 +156,17 @@ D_D8         N33750 N30453 Dbreak
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N28083)    0.0000 (N28087)    0.0000 (N28180)    0.0000 (N28987)    0.0000     
+(N28108)    0.0000 (N28987)    0.0000 (N28991)    0.0000 (N29049)    0.0000     
 
-(N28991)    0.0000 (N29049)    0.0000 (N30447)  100.0000 (N30453) 19.66E-06     
+(N30447)  100.0000 (N30453) 19.66E-06 (N30457)    -.0706 (N30563)    -.0706     
 
-(N30457)    -.0706 (N30563)    -.0706 (N33750)     .1182 (N33794)  100.0000     
+(N33750)     .1182 (N33794)  100.0000 (N33800) 18.66E-06 (N33816)    0.0000     
 
-(N33800) 18.66E-06 (N33816)    0.0000 (N48415)    0.0000 (N48591)    0.0000     
+(N48415)    0.0000 (N48591)    0.0000 (N48617)    0.0000 (N48629)    0.0000     
 
-(N48617)    0.0000 (N48629)    0.0000 (N50646) 18.84E-06 (N52100)  100.0000     
+(N50646) 18.84E-06 (N51459)    0.0000 (N52100)  100.0000 (N52110)     .0707     
 
-(N52110)     .0707 (X_U2.6) 7.678E-06 (X_U2.7)    -.0741 (X_U2.8)    -.0741     
+(N55662)    0.0000 (X_U2.6) 7.678E-06 (X_U2.7)    -.0741 (X_U2.8)    -.0741     
 
 (X_U2.9)    0.0000 (N304273) -100.0000                   (N337743) -100.0000    
 
@@ -245,9 +253,9 @@ D_D8         N33750 N30453 Dbreak
 
           JOB CONCLUDED
 
-**** 04/16/21 13:55:57 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/25/21 00:04:54 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen-pspicefiles\schematic1\diff.sim ] 
+ ** Profile: "SCHEMATIC1-diff"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen-pspice
 
 
  ****     JOB STATISTICS SUMMARY
@@ -257,5 +265,5 @@ D_D8         N33750 N30453 Dbreak
 
 
 
-  Total job time (using Solver 1)   =         .13
+  Total job time (using Solver 1)   =         .27
 

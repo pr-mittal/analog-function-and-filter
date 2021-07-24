@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2\ps2-pspicefiles\schematic1\freq-domain.sim ] 
+** Profile: "SCHEMATIC1-freq-domain"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2\ps2-pspicefiles\schematic1\freq-domain.sim ] 
 
 ** Creating circuit file "freq-domain.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -10,7 +10,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 0.5 0 
+.AC LIN 1000 10 150
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

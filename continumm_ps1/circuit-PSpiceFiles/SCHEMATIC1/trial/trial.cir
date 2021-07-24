@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit-pspicefiles\schematic1\trial.sim ] 
 
 ** Creating circuit file "trial.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -10,7 +10,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 2 0 0.1 
+.TRAN  0 5 0 0.1 
 .OPTIONS ADVCONV
 .OPTIONS METHOD= Default
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 

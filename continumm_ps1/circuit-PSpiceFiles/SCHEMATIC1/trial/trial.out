@@ -1,7 +1,7 @@
 
-**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/24/21 23:47:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+ ** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit-pspicefi
 
 
  ****     CIRCUIT DESCRIPTION
@@ -22,7 +22,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 2 0 0.1 
+.TRAN  0 5 0 0.1 
 .OPTIONS ADVCONV
 .OPTIONS METHOD= Default
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
@@ -44,9 +44,9 @@ R_R4         N15628 N16122  693.14718 TC=0,0
 **** RESUMING trial.cir ****
 .END
 
-**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/24/21 23:47:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+ ** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit-pspicefi
 
 
  ****     Diode MODEL PARAMETERS
@@ -62,9 +62,9 @@ R_R4         N15628 N16122  693.14718 TC=0,0
           RS    1               1            
 
 
-**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/24/21 23:47:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+ ** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit-pspicefi
 
 
  ****     BJT MODEL PARAMETERS
@@ -100,9 +100,9 @@ R_R4         N15628 N16122  693.14718 TC=0,0
            D     .87             .87         
 
 
-**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/24/21 23:47:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+ ** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit-pspicefi
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -172,9 +172,9 @@ R_R4         N15628 N16122  693.14718 TC=0,0
 
           JOB CONCLUDED
 
-**** 04/11/21 20:20:55 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 07/24/21 23:47:16 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trial"  [ c:\users\prana\onedrive\desktop\udyam\continuum\ps1\circuit-pspicefiles\schematic1\trial.sim ] 
+ ** Profile: "SCHEMATIC1-trial"  [ C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps1\circuit-pspicefi
 
 
  ****     JOB STATISTICS SUMMARY
@@ -184,5 +184,5 @@ R_R4         N15628 N16122  693.14718 TC=0,0
 
 
 
-  Total job time (using Solver 1)   =        0.00
+  Total job time (using Solver 1)   =         .02
 
