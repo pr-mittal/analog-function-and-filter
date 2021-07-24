@@ -90,13 +90,13 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen.dsn")
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen.dsn")
       (Path "Design Resources"
-         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen.dsn"
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Select "Design Resources"
-         "C:\Users\prana\OneDrive\Desktop\udyam\continuum\ps2-2\differen.dsn"
+         "C:\Users\prana\OneDrive\Documents\GitHub\analog-function-and-filter\continumm_ps2-2\differen.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
@@ -107,11 +107,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1378 52 370")
-        (Scroll "232 550")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1378 52 370")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\PRANA\ONEDRIVE\DESKTOP\UDYAM\CONTINUUM\PS2-2\DIFFEREN.DSN")
+         "C:\USERS\PRANA\ONEDRIVE\DOCUMENTS\GITHUB\ANALOG-FUNCTION-AND-FILTER\CONTINUMM_PS2-2\DIFFEREN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))
